@@ -1,6 +1,5 @@
 export function generateCarImageUrl(car: AppCar, angle?: string) {
-  // TODO: .env
-  const url = new URL('https://cdn.imagin.studio/getimage')
+  const url = new URL(`https://${process.env.NEXT_PUBLIC_IMAGIN_HOST}/getimage`)
   const { make, model, year } = car
 
   url.searchParams.append(
@@ -11,7 +10,6 @@ export function generateCarImageUrl(car: AppCar, angle?: string) {
   url.searchParams.append('modelFamily', model.split(' ')[0])
   url.searchParams.append('zoomType', 'fullscreen')
   url.searchParams.append('modelYear', `${year}`)
-  // url.searchParams.append('zoomLevel', zoomLevel);
   url.searchParams.append('angle', `${angle}`)
 
   return `${url}`

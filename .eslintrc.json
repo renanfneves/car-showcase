@@ -5,6 +5,7 @@
   ],
   "rules": {
     "no-undef": "off",
-    "camelcase": "off"
+    "camelcase": "off",
+    "no-unused-vars": "off"
   }
 }
