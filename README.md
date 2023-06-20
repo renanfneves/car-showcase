@@ -1,34 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+    <img alt="Car Showcase" title="#CarShowcase" src="./public/banner.png" />
+</h1>
 
-## Getting Started
+<div id="about" />
 
-First, run the development server:
+# Car Showcase
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+<p>
+This is a landing page written to search for cars in catalog hub.
+The idea of this project was to test and practice NextJs 13 features like async components, also responsive layouts.
+I have used two apis in background to generate the data and content. Which are <strong>IMAGIN.studio</strong> and <strong>RapidApi</strong>.
+You can find the deployed version <a href="https://car-showcase-rust.vercel.app">here</a>
+</p>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Content Table
+<!--ts-->
+   * [About](#about)
+   * [Usage](#usage)
+      * [Prerequisites](#prerequisites)
+      * [Local files](#local-files)
+      * [Commands](#commands)
+   * [Features](#features)
+   * [Technologies](#technologies)
+<!--te-->
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage
+<p id="usage">To run the project you need to follow the steps below:</p>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Prerequisites
+<ul style="list-style-type: none;" id="prerequisites">
+  <li>Node v18 or higher</li>
+  <li>IMAGIN.studio Api Key</li>
+  <li>RapidAPI key</li>
+</ul>
 
-## Learn More
+### Local Files
+<ul style="list-style-type: none;" id="local-files">
+  <li>NEXT_PUBLIC_IMAGIN_API_KEY (IMAGIN.studio)</li>
+  <li>NEXT_PUBLIC_IMAGIN_HOST (IMAGIN.studio)</li>
+  <li>RAPID_API_KEY (RapidApi)</li>
+  <li>RAPID_API_HOST (RapidApi)</li>
+</ul>
 
-To learn more about Next.js, take a look at the following resources:
+### Commands
+<ul style="list-style-type: none;" id="local-files">
+  <li>npm install</li>
+  <li>npm run dev</li>
+</ul>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Features
+<ul style="list-style-type: none;" id="features">
+  <li>
+    <h3>Home</h3>
+    <img style="width: 100%; height: auto; object-fit: cover;" alt="Cars" title="Cars" src="./public/list.png" />
+  </li>
+  <li>
+    <h3>Car Details</h3>
+     <img style="width: 100%; height: auto; object-fit: cover;" alt="Details" title="Details" src="./public/details.png" />
+  </li>
+   <li>
+      <h3>Mobile Version</h3>
+      <div style="display: flex; justify-content: space-between; width: 100%; height: 400px;">
+        <img style="width: 30%; height: 100%; object-fit: cover;" alt="Mobile Hero" title="Mobile Hero" src="./public/mobile-hero.png" />
+        <img style="width: 30%; height: 100%; object-fit: cover;" alt="Mobile Catalog" title="Mobile Catalog" src="./public/mobile-catalog.png" />
+        <img style="width: 30%; height: 100%; object-fit: cover;" alt="Mobile Details" title="Mobile Details" src="./public/mobile-details.png" />
+      </div>
+  </li>
+</div>
+</ul>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Technologies
+<ul style="list-style-type: none;" id="features">
+  <li>React 18</li>
+  <li>Next.js 13.4</li>
+  <li>Typescript</li>
+  <li>TailwindCSS</li>
+  <li>Vercel</li>
+</ul>

@@ -66,7 +66,7 @@ export function SearchBar() {
     }
     const newRoute = `${pathname}?${searchParams.toString()}`
 
-    router.push(newRoute)
+    router.push(newRoute, { scroll: false })
   }
 
   return (
